@@ -20,6 +20,6 @@ public class Company {
     @Column(nullable = false)
     private String directorName;
 
-    @OneToOne(optional = false)
+    @OneToOne(optional = false, cascade = CascadeType.ALL)
     private Address address;
 }
